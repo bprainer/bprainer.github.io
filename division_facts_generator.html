@@ -38,12 +38,12 @@
             <div class="container d-flex align-items-center flex-column">		
 		<!--Body-->
 		<u><b><h3>Math Facts: Division</h3></b></u></br>
-		<button id="increment-btn" onclick="generate()">Generate</button> <br>
-		<table class="table" style="font-size: 20px;">
+		<button id="increment-btn" onclick="generate()">Generate</button> <input type="button" value="Print Table" onclick="myApp.printTable()" /><br>
+		<table class="table" id="tab" style="font-size: 20px;">
 			<tr id="tablerow1">
 				<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 					<u>÷ <span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -60,7 +60,7 @@
 		<tr id="tablerow2">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -77,7 +77,7 @@
 		<tr id="tablerow3">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -94,7 +94,7 @@
 		<tr id="tablerow4">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -111,7 +111,7 @@
 		<tr id="tablerow5">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -128,7 +128,7 @@
 		<tr id="tablerow6">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -145,7 +145,7 @@
 		<tr id="tablerow7">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -162,7 +162,7 @@
 		<tr id="tablerow8">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -179,7 +179,7 @@
 		<tr id="tablerow9">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -196,7 +196,7 @@
 		<tr id="tablerow10">
 			<td><span class="mathFacts2"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts1">0</span></u>
-			</br></td>
+			</br></br></td>
 			<td><span class="mathFacts4"> 0</span>&nbsp;</br>
 				 <u>÷<span class="mathFacts3">0</span></u>
 			</br></td>
@@ -258,5 +258,17 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+	
+<script>
+    var myApp = new function () {
+        this.printTable = function () {
+            var tab = document.getElementById('tab');
+            var win = window.open('', '', 'height=700,width=700');
+            win.document.write(tab.outerHTML);
+            win.document.close();
+            win.print();
+        }
+    }
+</script>
     </body>
 </html>
