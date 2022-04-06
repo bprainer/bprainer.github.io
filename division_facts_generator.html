@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/print.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -35,10 +36,10 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead text-center">
-            <div class="container d-flex align-items-center flex-column" id="tab">		
+            <div class="container d-flex align-items-center flex-column">		
 		<!--Body-->
 		<u><b><h3>Math Facts: Division</h3></b></u></br>
-		<button id="increment-btn" onclick="generate()">Generate</button> <button id="print-button" value="Print Table" onclick="myApp.printTable()" />Print</button><br>
+		<button id="increment-btn" onclick="generate()">1. Generate</button> <button id="print-button" onclick="window.print()" />2. Print</button><br>
 		<table class="table" style="font-size: 20px;">
 			<tr id="tablerow1">
 				<td><span class="mathFacts2">&nbsp; 0</span>&nbsp;</br>
@@ -258,19 +259,5 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-	
-<script>
-    var myApp = new function () {
-        this.printTable = function () {
-            var tab = document.getElementById('tab');
-            var win = window.open('', '', 'height=700,width=700');
-            win.document.write(tab.innerHTML);
-            win.document.close();
-	    win.focus();
-            win.print();
-	    win.close();
-        }
-    }
-</script>
     </body>
 </html>
