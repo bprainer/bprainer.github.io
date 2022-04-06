@@ -264,9 +264,11 @@
         this.printTable = function () {
             var tab = document.getElementById('tab');
             var win = window.open('', '', 'height=700,width=700');
-            win.document.write(tab.outerHTML);
+            win.document.write(tab.innerHTML);
             win.document.close();
+	    win.focus();
             win.print();
+	    win.close();
         }
     }
 </script>
