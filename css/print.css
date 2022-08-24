@@ -1,8 +1,0 @@
-/* Start section to format printing */
-@media print{
-  .noprint {display:none;}
-}
-
-@media screen{
-}
-/* End section to format printing */
