@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Rainer - Tools</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/print.css" rel="stylesheet" media="print" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <div class="noprint">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <div class="navbar-brand">Math Facts Generator</div>
+            </div>
+        </nav>
+	</div>
+        <!-- Masthead-->
+        <header class="masthead text-center">
+            <div class="container d-flex align-items-center flex-column">
+	        <div class="noprint">
+		<!--Body-->
+		<button id="increment-btn" onclick="generateMultiplication()">Generate Multiplication</button>
+		<button id="increment-btn" onclick="generateDivision()">Generate Division</button>
+		<button id="print-button" onclick="window.print()" />Print</button> </br></br>
+		</div>
+		<table class="table" style="font-size: 12px; text-align: right;">
+			<tr id="tablerow1">
+				<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+					<u><span class="mathSymbol1">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol2">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol3">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol4">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol5">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow2">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol6">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol7">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol8">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol9">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol10">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow3">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol11">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol12">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol13">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol14">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol15">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow4">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol16">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol17">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol18">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol19">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol20">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow5">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol21">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol22">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol23">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol24">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol25">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow6">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol26">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol27">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol28">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol29">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol30">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow7">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol31">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol32">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol33">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol34">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol35">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow8">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol36">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol37">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol38">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol39">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol40">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow9">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol41">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol42">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol43">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol44">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol45">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+		<tr id="tablerow10">
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts1"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol46">x</span>&nbsp;&nbsp;<span class="mathFacts2">0</span></u>
+			</br></br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts3"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol47">x</span>&nbsp;&nbsp;<span class="mathFacts4">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts5"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol48">x</span>&nbsp;&nbsp;<span class="mathFacts6">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts7"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol49">x</span>&nbsp;&nbsp;<span class="mathFacts8">0</span></u>
+			</br></td>
+			<td>&nbsp;&nbsp;&nbsp;<span class="mathFacts9"> 0</span>&nbsp;</br>
+				 <u><span class="mathSymbol50">x</span>&nbsp;&nbsp;<span class="mathFacts10">0</span></u>
+			</br></td>
+		</tr>
+	</table>
+</div>
+</header>
+        
+ 
+		
+		<script src="js\mathFacts.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
